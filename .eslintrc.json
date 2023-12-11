@@ -1,7 +1,23 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "semi": [
+      2,
+      "never"
+    ],
+    "no-multi-spaces": "error",
+    "quotes": [
+      2,
+      "single"
+    ],
+    "jsx-quotes": [
+      2,
+      "prefer-single"
+    ],
+    "@typescript-eslint/semi": [
       2,
       "never"
     ]
