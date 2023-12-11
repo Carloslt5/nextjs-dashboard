@@ -20,6 +20,13 @@
     "@typescript-eslint/semi": [
       2,
       "never"
-    ]
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "react/no-unescaped-entities": "off"
   }
 }
