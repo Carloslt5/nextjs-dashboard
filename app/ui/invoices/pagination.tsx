@@ -58,10 +58,10 @@ function PaginationNumber({
   isActive,
   position,
 }: {
-  page: number | string;
-  href: string;
-  position?: 'first' | 'last' | 'middle' | 'single';
-  isActive: boolean;
+  page: number | string
+  href: string
+  position?: 'first' | 'last' | 'middle' | 'single'
+  isActive: boolean
 }) {
   const className = clsx(
     'flex h-10 w-10 items-center justify-center text-sm border',
@@ -77,7 +77,10 @@ function PaginationNumber({
   return isActive || position === 'middle' ? (
     <div className={className}>{page}</div>
   ) : (
-    <Link href={href} className={className}>
+    <Link
+      href={href}
+      className={className}
+    >
       {page}
     </Link>
   )
@@ -88,9 +91,9 @@ function PaginationArrow({
   direction,
   isDisabled,
 }: {
-  href: string;
-  direction: 'left' | 'right';
-  isDisabled?: boolean;
+  href: string
+  direction: 'left' | 'right'
+  isDisabled?: boolean
 }) {
   const className = clsx(
     'flex h-10 w-10 items-center justify-center rounded-md border',
@@ -112,7 +115,10 @@ function PaginationArrow({
   return isDisabled ? (
     <div className={className}>{icon}</div>
   ) : (
-    <Link className={className} href={href}>
+    <Link
+      className={className}
+      href={href}
+    >
       {icon}
     </Link>
   )
