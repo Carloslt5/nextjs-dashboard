@@ -13,7 +13,8 @@ export function CreateInvoice() {
   )
 }
 
-export function UpdateInvoice({ id }: { id: string }) {
+export function UpdateInvoice() {
+// { id }: { id: string }
   return (
     <Link
       href='/dashboard/invoices'
@@ -24,7 +25,8 @@ export function UpdateInvoice({ id }: { id: string }) {
   )
 }
 
-export function DeleteInvoice({ id }: { id: string }) {
+export function DeleteInvoice() {
+// { id }: { id: string }
   return (
     <>
       <button className='rounded-md border p-2 hover:bg-gray-100'>
