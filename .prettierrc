@@ -7,6 +7,6 @@
   "jsxSingleQuote": true,
   "singleAttributePerLine": true,
   "insertPragma": false,
-  "printWidth": 90,
+  "printWidth": 100,
   "tabWidth": 2
 }
