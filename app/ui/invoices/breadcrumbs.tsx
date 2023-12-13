@@ -8,7 +8,10 @@ interface Breadcrumb {
   active?: boolean
 }
 
-export default function Breadcrumbs({ breadcrumbs }: { breadcrumbs: Breadcrumb[] }) {
+type BreadcrumbsProps = {
+  breadcrumbs: Breadcrumb[]
+}
+export default function Breadcrumbs({ breadcrumbs }: BreadcrumbsProps) {
   return (
     <nav
       aria-label='Breadcrumb'
